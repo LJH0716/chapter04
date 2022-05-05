@@ -1,4 +1,4 @@
-package com.javaex.ex04;
+package com.javaex.ex03;
 
 public class Circle {
 
@@ -27,5 +27,4 @@ public class Circle {
 	public String toString() {
 		return "Circle [radius=" + radius + "]";
 	}
-
 }

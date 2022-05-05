@@ -1,4 +1,4 @@
-package com.javaex.ex04;
+package com.javaex.ex03;
 
 public class Point {
 
@@ -8,16 +8,14 @@ public class Point {
 
 	// 생성자
 	public Point() {
-		super(); //Object()  
+		super(); // Object()
 	}
 
-
 	public Point(int x, int y) {
-		super();  //Object()  
+		super(); // Object()
 		this.x = x;
 		this.y = y;
 	}
-
 
 	// 메소드 gs
 	public int getX() {
@@ -41,5 +39,4 @@ public class Point {
 	public String toString() {
 		return "Point [x=" + x + ", y=" + y + "]";
 	}
-
 }

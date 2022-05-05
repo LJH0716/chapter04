@@ -1,23 +1,20 @@
-package com.javaex.ex04;
+package com.javaex.ex07;
 
 public class Point {
-
 	// 필드
 	private int x;
 	private int y;
 
 	// 생성자
 	public Point() {
-		super(); //Object()  
+		super();
 	}
 
-
 	public Point(int x, int y) {
-		super();  //Object()  
+		super();
 		this.x = x;
 		this.y = y;
 	}
-
 
 	// 메소드 gs
 	public int getX() {
@@ -40,6 +37,27 @@ public class Point {
 	@Override
 	public String toString() {
 		return "Point [x=" + x + ", y=" + y + "]";
+	}
+
+	@Override
+	public int hashCode() {
+		int hashCode = x + y;
+		return hashCode;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		boolean result;
+
+		Point p = (Point) obj;
+
+		if ((this.x == p.x) && (this.y == p.y)) {
+			result = true;
+		} else {
+			result = false;
+		}
+
+		return result;
 	}
 
 }
